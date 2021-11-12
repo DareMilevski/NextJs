@@ -1,0 +1,17 @@
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
+}
+.list li {
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px;
+  background-color: wheat;
+  margin-bottom: 20px;
+}

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import styles from "../styles/Home.module.css";
 
 import Link from "next/link";
 
@@ -7,10 +8,10 @@ export default function Home(props) {
   const { products } = props;
 
   return (
-    <ul>
+    <ul className={styles.list}>
       {products.map((product) => (
         <li key={product.id}>
-          <Link href={`/${product.id}`}>{product.title}</Link>
+          <Link href={`/products/${product.id}`}>{product.title}</Link>
         </li>
       ))}
     </ul>
